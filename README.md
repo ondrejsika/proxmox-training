@@ -7,6 +7,14 @@
 
 ## Course
 
+
+## Demo Proxmox
+
+- GUI: <https://pve1.sikademo.com:8006>
+- Username: `root`
+- Password: `training2019`
+
+
 ## Thank you & Questions
 
 ### Ondrej Sika
