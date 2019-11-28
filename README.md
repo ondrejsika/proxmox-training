@@ -7,6 +7,13 @@
 
 ## Course
 
+## Agenda
+
+- Introduction to Virtualization, KVM & Proxmox
+- Proxmox Node Setup
+- Storage Setup
+- Virtual Machines
+- LXC Containers
 
 ## Demo Proxmox
 
@@ -94,12 +101,16 @@ Now, you can store Images, Disk Images & Backups on NFC.
 
 > Ceph is a open source storage platform, implements object storage on a single distributed computer cluster, and provides interfaces for object-, block- and file-level storage. Ceph aims primarily for completely distributed operation without a single point of failure, and scalable to the exabyte level. -- [wikipedia](https://en.wikipedia.org/wiki/Ceph_(software))
 
+## Virtual Machines
+
+### Create VM
 
 ## Resources
 
 - Cloud Init - <https://pve.proxmox.com/wiki/Cloud-Init_Support>
 - Cloud Init FAQ - <https://pve.proxmox.com/wiki/Cloud-Init_FAQ>
 - Proxmox on Single IP Address - <https://www.guyatic.net/2017/04/10/configuring-proxmox-ovh-kimsufi-server-single-public-ip/>
+- Persistent IP Tables Rules - <https://www.thomas-krenn.com/en/wiki/Saving_Iptables_Firewall_Rules_Permanently>
 
 ## Thank you & Questions
 
