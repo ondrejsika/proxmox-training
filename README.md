@@ -111,6 +111,7 @@ Now, you can store Images, Disk Images & Backups on NFC.
 - Cloud Init FAQ - <https://pve.proxmox.com/wiki/Cloud-Init_FAQ>
 - Proxmox on Single IP Address - <https://www.guyatic.net/2017/04/10/configuring-proxmox-ovh-kimsufi-server-single-public-ip/>
 - Persistent IP Tables Rules - <https://www.thomas-krenn.com/en/wiki/Saving_Iptables_Firewall_Rules_Permanently>
+- Install Proxmox on Debian - <https://computingforgeeks.com/how-to-install-proxmox-ve-on-debian/>
 
 ## Thank you & Questions
 
