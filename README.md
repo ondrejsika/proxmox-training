@@ -14,6 +14,15 @@
 - Username: `root`
 - Password: `training2019`
 
+
+## Terminology
+
+- PVE - Proxmox Virtual Environment
+- Node - Physical node which runs Proxmox & KVM
+- VM - Virtual Machine
+- CT - LXC Container
+
+
 ## Resources
 
 - CLoud Init - <https://pve.proxmox.com/wiki/Cloud-Init_Support>
