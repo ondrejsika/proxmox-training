@@ -72,6 +72,23 @@ iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9903 -j DNAT --to 192.168.
 iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9904 -j DNAT --to 192.168.0.2:22
 ```
 
+## Storage
+
+### Directory
+
+Path on node's filesystem
+
+### NFS
+
+Run NFS server, for example `nfs.sikademo.com` ([Terraform Manifest](https://github.com/ondrejsika/terraform-demo-nfs))
+
+#### Add NFS storage to storage configuration
+
+Got to __Datacenter__ -> __Storage__ and add NFS.
+
+![](images/add-nfs.png)
+
+Now, you can store Images, Disk Images & Backups on NFC.
 
 ## Resources
 
