@@ -75,7 +75,7 @@ iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9904 -j DNAT --to 192.168.
 
 ## Resources
 
-- CLoud Init - <https://pve.proxmox.com/wiki/Cloud-Init_Support>
+- Cloud Init - <https://pve.proxmox.com/wiki/Cloud-Init_Support>
 - Proxmox on Single IP Address - <https://www.guyatic.net/2017/04/10/configuring-proxmox-ovh-kimsufi-server-single-public-ip/>
 
 ## Thank you & Questions
