@@ -14,6 +14,9 @@
 - Username: `root`
 - Password: `training2019`
 
+## Resources
+
+- CLoud Init - <https://pve.proxmox.com/wiki/Cloud-Init_Support>
 
 ## Thank you & Questions
 
