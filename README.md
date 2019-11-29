@@ -15,6 +15,13 @@
 - Virtual Machines
 - LXC Containers
 
+## Proxmox Features
+
+- KVM & LXC Virtualization
+- Web Interface, API, CLI & Terraform Support
+- HA, Multi Master
+- Many storage plugins (NFS, CIFS, GlusterFS), built-in CEPH
+
 ## Demo Proxmox
 
 - GUI: <https://pve1.sikademo.com:8006>
