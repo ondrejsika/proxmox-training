@@ -105,13 +105,89 @@ Now, you can store Images, Disk Images & Backups on NFC.
 
 ### Create VM
 
+```
+qm create <vmid> [ARGS]
+```
+
+Example
+
+```
+qm create 104 --cdrom local:iso/debian-10.2.0-amd64-netinst.iso --name demo --net0 virtio,bridge=vmbr0 --virtio0 local:10,format=qcow2 --bootdisk virtio0 --ostype l26 --memory 1024 --onboot no --sockets 1
+```
+
+[more](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines#_managing_virtual_machines_with_tt_span_class_monospaced_qm_span_tt)
+
+### Clone
+
+```
+qm clone <sourcevmid> <targetvmid>
+```
+
+Example
+
+```
+qm create 100 105
+```
+
+### Snapshots
+
+```
+/usr/sbin/qm snapshot <vmid> <snapshot name>
+```
+
+Example
+
+```
+/usr/sbin/qm snapshot 101 Snapshot_$(date +"%Y_%m_%d_%H_%M_%S")
+```
+
+For automatic (cron) snapshots, you can use <https://github.com/kvaps/pve-autosnap>
+
+### Backup / Restore
+
+#### Backup
+
+3 levels of consistency
+
+- stop mode
+- suspend mode
+- snapshot mode
+
+```
+vzdump <vmid> [--mode <mode>] [--storage <storage>]
+```
+```
+vzdump --all
+```
+
+Example
+
+```
+vzdump 100 --mode snapshot --storage nfs
+```
+
+#### Restore
+
+```
+qmrestore <file> <vmid>
+```
+
+Example
+
+```
+qmrestore 100 /mnt/pve/nfs/dump/vzdump-qemu-100-2019_11_29-06_29_48.vma
+```
+
 ## Resources
 
+- Proxmox Command Line Tools - <https://pve.proxmox.com/wiki/Command_line_tools>
+- Backup & Restore - <https://pve.proxmox.com/wiki/Backup_and_Restore>
 - Cloud Init - <https://pve.proxmox.com/wiki/Cloud-Init_Support>
 - Cloud Init FAQ - <https://pve.proxmox.com/wiki/Cloud-Init_FAQ>
 - Proxmox on Single IP Address - <https://www.guyatic.net/2017/04/10/configuring-proxmox-ovh-kimsufi-server-single-public-ip/>
 - Persistent IP Tables Rules - <https://www.thomas-krenn.com/en/wiki/Saving_Iptables_Firewall_Rules_Permanently>
 - Install Proxmox on Debian - <https://computingforgeeks.com/how-to-install-proxmox-ve-on-debian/>
+- Upgrade from 5.x to 6.0 - <https://pve.proxmox.com/wiki/Upgrade_from_5.x_to_6.0>
 
 ## Thank you & Questions
 
