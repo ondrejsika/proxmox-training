@@ -149,6 +149,14 @@ Example
 qm create 100 105
 ```
 
+### Cloud Init
+
+You have to have cloud-init installed in your template
+
+```
+apt-get install cloud-init
+```
+
 ### Snapshots
 
 ```
