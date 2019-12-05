@@ -130,6 +130,13 @@ qm create 104 --cdrom local:iso/debian-10.2.0-amd64-netinst.iso --name demo --ne
 
 [more](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines#_managing_virtual_machines_with_tt_span_class_monospaced_qm_span_tt)
 
+
+### Install Qemu Agent
+
+```
+apt-get install qemu-guest-agent
+```
+
 ### Clone
 
 ```
