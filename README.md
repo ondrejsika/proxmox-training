@@ -195,11 +195,23 @@ qm create 100 105
 
 ### Cloud Init
 
+#### Why Cloud Init?
+
+- Configure your VM on start
+- Set root password
+- Add SSH key
+- Configure hostname & network
+
+#### Use Cloud Init
+
 You have to have cloud-init installed in your template
 
 ```
 apt-get install cloud-init
 ```
+
+If you have cloud init installed, it will automatically run on every VM start.
+
 
 ### Snapshots
 
