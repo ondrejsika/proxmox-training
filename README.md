@@ -5,6 +5,13 @@
     2019 Ondrej Sika <ondrej@ondrejsika.com>
     https://github.com/ondrejsika/proxmox-training
 
+## About Me - Ondrej Sika
+
+__DevOps Engineer, Consultant & Lecturer__
+
+Git, Gitlab, Gitlab CI, Docker, Kubernetes, Terraform, Prometheus, ELK / EFK
+
+
 ## Course
 
 ## Agenda
