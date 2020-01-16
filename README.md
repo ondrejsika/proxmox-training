@@ -31,10 +31,12 @@ Git, Gitlab, Gitlab CI, Docker, Kubernetes, Terraform, Prometheus, ELK / EFK
 
 ## Demo Proxmox
 
-- GUI: <https://pve1.sikademo.com:8006>
+- GUI:
+  - https://pve1.sikademo.com:8006
+  - https://pve2.sikademo.com:8006
+  - https://pve3.sikademo.com:8006
 - Username: `root`
-- Password: `training2019`
-
+- Password: __you get a password at the course__
 
 ## Terminology
 
