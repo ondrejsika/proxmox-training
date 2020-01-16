@@ -28,6 +28,7 @@ Also feel free to propose improvements by creating issues.
 
 - Introduction to Virtualization, KVM & Proxmox
 - Proxmox Node Setup
+- Cluster Setup
 - Storage Setup
 - Virtual Machines
 - LXC Containers
@@ -120,6 +121,26 @@ iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9907 -j DNAT --to 192.168.
 iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9908 -j DNAT --to 192.168.0.8:22
 iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9909 -j DNAT --to 192.168.0.9:22
 ```
+
+## Cluster
+
+You need Proxmox Cluster for:
+
+- CEPH
+- HA
+- Replication
+
+### Create Cluster
+
+![](images/cluster-create.png)
+
+### Copy Join Info
+
+![](images/cluster-join-info.png)
+
+### Join Cluster
+
+![](images/cluster-join.png)
 
 ## Storage
 
