@@ -244,3 +244,5 @@ qmrestore 100 /mnt/pve/nfs/dump/vzdump-qemu-100-2019_11_29-06_29_48.vma
 - linkedin:	[/in/ondrejsika/](https://linkedin.com/in/ondrejsika/)
 
 _Do you like the course? Write me recommendation on Twitter (with handle `@ondrejsika`) and LinkedIn (add me [/in/ondrejsika](https://www.linkedin.com/in/ondrejsika/) and I'll send you request for recommendation). __Thanks__._
+
+Wanna to go for a beer or do some work together? Just [book me](book-me.sika.io) :)
