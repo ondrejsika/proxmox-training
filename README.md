@@ -250,6 +250,15 @@ Example
 qmrestore 100 /mnt/pve/nfs/dump/vzdump-qemu-100-2019_11_29-06_29_48.vma
 ```
 
+### Replication
+
+Requirements:
+
+- Proxmox Cluster
+- ZFS Storage for VM image
+
+![](images/replication.png)
+
 ## Resources
 
 - Proxmox Command Line Tools - <https://pve.proxmox.com/wiki/Command_line_tools>
