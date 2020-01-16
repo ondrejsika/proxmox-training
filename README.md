@@ -149,6 +149,13 @@ ZFS Resources:
 
 ### Ceph
 
+Why Proxmox with Ceph:
+
+- HA VMs
+- Build in Ceph Custer (easy setup)
+
+#### What is Ceph
+
 > Ceph is a open source storage platform, implements object storage on a single distributed computer cluster, and provides interfaces for object-, block- and file-level storage. Ceph aims primarily for completely distributed operation without a single point of failure, and scalable to the exabyte level. -- [wikipedia](https://en.wikipedia.org/wiki/Ceph_(software))
 
 ## Virtual Machines
