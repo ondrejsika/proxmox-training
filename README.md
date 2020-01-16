@@ -129,6 +129,24 @@ Got to __Datacenter__ -> __Storage__ and add NFS.
 
 Now, you can store Images, Disk Images & Backups on NFC.
 
+### ZFS
+
+Why Proxmox with ZFS:
+
+- Replication between nodes (partional updates by zfs send)
+- Easy Migration between nodes
+
+ZFS Features:
+
+- Snapshots
+- ZFS Sync
+
+ZFS Resources:
+
+- https://pve.proxmox.com/wiki/ZFS_on_Linux
+- https://www.howtoforge.com/tutorial/how-to-use-snapshots-clones-and-replication-in-zfs-on-linux/
+
+
 ### Ceph
 
 > Ceph is a open source storage platform, implements object storage on a single distributed computer cluster, and provides interfaces for object-, block- and file-level storage. Ceph aims primarily for completely distributed operation without a single point of failure, and scalable to the exabyte level. -- [wikipedia](https://en.wikipedia.org/wiki/Ceph_(software))
@@ -235,6 +253,8 @@ qmrestore 100 /mnt/pve/nfs/dump/vzdump-qemu-100-2019_11_29-06_29_48.vma
 - Persistent IP Tables Rules - <https://www.thomas-krenn.com/en/wiki/Saving_Iptables_Firewall_Rules_Permanently>
 - Install Proxmox on Debian - <https://computingforgeeks.com/how-to-install-proxmox-ve-on-debian/>
 - Upgrade from 5.x to 6.0 - <https://pve.proxmox.com/wiki/Upgrade_from_5.x_to_6.0>
+- ZFS on Linux (Proxmox Wiki) - <https://pve.proxmox.com/wiki/ZFS_on_Linux>
+- Snapshots, Clones & Replication in ZFS on Linux - <https://www.howtoforge.com/tutorial/how-to-use-snapshots-clones-and-replication-in-zfs-on-linux/>
 
 ## Thank you & Questions
 
