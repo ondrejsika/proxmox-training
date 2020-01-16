@@ -1,5 +1,7 @@
 [Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io> | [go to course ->](#course)
 
+![](images/proxmox.png)
+
 # Proxmox Training
 
     2019 Ondrej Sika <ondrej@ondrejsika.com>
