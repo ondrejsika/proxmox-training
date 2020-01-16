@@ -190,7 +190,7 @@ qm clone <sourcevmid> <targetvmid>
 Example
 
 ```
-qm create 100 105
+qm clone 100 105
 ```
 
 ### Cloud Init
