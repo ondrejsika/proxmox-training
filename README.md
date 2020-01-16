@@ -325,6 +325,20 @@ mv /etc/pve/nodes/node1/qemu-server/102.conf /etc/pve/nodes/node2/qemu-server/10
 qm start 102
 ```
 
+## Thank you & Questions
+
+### Ondrej Sika
+
+- email: <ondrej@sika.io>
+- web: <https://sika.io>
+- twitter: 	[@ondrejsika](https://twitter.com/ondrejsika)
+- linkedin:	[/in/ondrejsika/](https://linkedin.com/in/ondrejsika/)
+
+_Do you like the course? Write me recommendation on Twitter (with handle `@ondrejsika`) and LinkedIn (add me [/in/ondrejsika](https://www.linkedin.com/in/ondrejsika/) and I'll send you request for recommendation). __Thanks__._
+
+Wanna to go for a beer or do some work together? Just [book me](book-me.sika.io) :)
+
+
 ## Resources
 
 - Proxmox Command Line Tools - <https://pve.proxmox.com/wiki/Command_line_tools>
@@ -338,16 +352,3 @@ qm start 102
 - ZFS on Linux (Proxmox Wiki) - <https://pve.proxmox.com/wiki/ZFS_on_Linux>
 - Snapshots, Clones & Replication in ZFS on Linux - <https://www.howtoforge.com/tutorial/how-to-use-snapshots-clones-and-replication-in-zfs-on-linux/>
 - Proxmox VE Ceph Benchmark 2018/02 - <https://www.proxmox.com/en/downloads/item/proxmox-ve-ceph-benchmark>
-
-## Thank you & Questions
-
-### Ondrej Sika
-
-- email: <ondrej@sika.io>
-- web: <https://sika.io>
-- twitter: 	[@ondrejsika](https://twitter.com/ondrejsika)
-- linkedin:	[/in/ondrejsika/](https://linkedin.com/in/ondrejsika/)
-
-_Do you like the course? Write me recommendation on Twitter (with handle `@ondrejsika`) and LinkedIn (add me [/in/ondrejsika](https://www.linkedin.com/in/ondrejsika/) and I'll send you request for recommendation). __Thanks__._
-
-Wanna to go for a beer or do some work together? Just [book me](book-me.sika.io) :)
