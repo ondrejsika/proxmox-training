@@ -325,7 +325,9 @@ mv /etc/pve/nodes/node1/qemu-server/102.conf /etc/pve/nodes/node2/qemu-server/10
 qm start 102
 ```
 
-## Thank you & Questions
+## Thank you! & Questions?
+
+That's it. Do you have any questions? __Let's go for a beer!__
 
 ### Ondrej Sika
 
