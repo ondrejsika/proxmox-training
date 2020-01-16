@@ -11,6 +11,14 @@ __DevOps Engineer, Consultant & Lecturer__
 
 Git, Gitlab, Gitlab CI, Docker, Kubernetes, Terraform, Prometheus, ELK / EFK
 
+## Star, Create Issues, Fork, and Contribute
+
+Feel free to star this repository or fork it.
+
+If you found bug, create issue or pull request.
+
+Also feel free to propose improvements by creating issues.
+
 
 ## Course
 
