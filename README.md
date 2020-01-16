@@ -305,7 +305,25 @@ Requirements:
 - Proxmox Cluster
 - ZFS Storage for VM image
 
+Resources:
+
+- https://pve.proxmox.com/wiki/Storage_Replication
+
 ![](images/replication.png)
+
+### Migrate VM between replicated nodes
+
+```
+mv /etc/pve/nodes/<node>/qemu-server/<vm_id>.conf /etc/pve/nodes/<new node>/qemu-server/<vm_id>.conf
+qm start 100
+```
+
+Example
+
+```
+mv /etc/pve/nodes/node1/qemu-server/102.conf /etc/pve/nodes/node2/qemu-server/102.conf
+qm start 102
+```
 
 ## Resources
 
