@@ -319,8 +319,8 @@ Requirements:
 
 ### Ondrej Sika
 
-- email:	<ondrej@sika.io>
-- web:	<https://sika.io>
+- email: <ondrej@sika.io>
+- web: <https://sika.io>
 - twitter: 	[@ondrejsika](https://twitter.com/ondrejsika)
 - linkedin:	[/in/ondrejsika/](https://linkedin.com/in/ondrejsika/)
 
