@@ -137,7 +137,7 @@ Got to __Datacenter__ -> __Storage__ and add NFS.
 
 ![](images/add-nfs.png)
 
-Now, you can store Images, Disk Images & Backups on NFC.
+Now, you can store CD Images, Disk Images & Backups on NFC.
 
 ### ZFS
 
