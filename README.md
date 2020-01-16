@@ -59,6 +59,16 @@ Ensure static IP on default bridge (vmbr0) and bridged ports to active network d
 
 ![](images/vmbr0.png)
 
+Help:
+
+```
+# Get IP & Mask
+ip a
+
+# Get default route
+ip route | grep default
+```
+
 Create new bridge for VMs network.
 
 ![](images/vmbr1.png)
