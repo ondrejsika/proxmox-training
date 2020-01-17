@@ -52,6 +52,7 @@ For sharing links & "secrets".
     - Scheduled Backups
     - HA
     - Permissions
+- Prometheus Monitoring
 - Beer!
 
 
@@ -461,6 +462,33 @@ You can use resource pools to assign permissons (user, grout) to some resources.
 - Create users in Linux (adduser)
 - Add users to groups
 - Create resource in pool / Add resource to pool
+
+### Prometheus Monitoring
+
+- [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (19 stars on Github)
+- [znerol/prometheus-pve-exporter](https://github.com/znerol/prometheus-pve-exporter) (65 stars on Github)
+
+#### Wakeful PVE Exporter
+
+Install
+
+```
+wget -O /usr/local/bin/pve_exporter https://github.com/wakeful/pve_exporter/releases/download/0.1.6/pve_exporter-linux-amd64 && chmod +x /usr/local/bin/pve_exporter
+```
+
+Run on node
+
+```
+pve_exporter -password <password>
+```
+
+Run on other machine
+
+```
+pve_exporter -pve-url <pve_url> -password <password>
+```
+
+Listen on port 9090
 
 
 ## Thank you! & Questions?
