@@ -35,9 +35,25 @@ For sharing links & "secrets".
 - Introduction to Virtualization, KVM & Proxmox
 - Proxmox Node Setup
 - Cluster Setup
-- Storage Setup
+- Storage
+    - Local
+    - NFS
+    - ZFS
+    - CEPH
 - Virtual Machines
+    - Create VM
+    - Cloud Init
+    - Snapshots
+    - Backup / Restore
+    - Replication
+    - Migrations between Nodes
 - LXC Containers
+- Datacenter
+    - Scheduled Backups
+    - HA
+    - Permissions
+- Beer!
+
 
 ## Proxmox Features
 
