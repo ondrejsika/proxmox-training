@@ -198,6 +198,10 @@ Why Proxmox with Ceph:
 
 ### Create VM
 
+![](images/vm-new.png)
+
+#### In CLI
+
 ```
 qm create <vmid> [ARGS]
 ```
