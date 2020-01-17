@@ -491,6 +491,22 @@ pve_exporter -pve-url <pve_url> -password <password>
 Listen on port 9090
 
 
+#### Run Demo Prometheus
+
+You need to have Prometheus installed
+
+```
+git clone https://github.com/ondrejsika/proxmox-training
+cd proxmox-training
+
+cd prometheus
+# run Prometheus
+prometheus
+```
+
+Go to <http://127.0.0.1:9090/graph>
+
+
 ## Thank you! & Questions?
 
 That's it. Do you have any questions? __Let's go for a beer!__

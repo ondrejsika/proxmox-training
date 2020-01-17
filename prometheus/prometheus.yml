@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: pve
+    static_configs:
+      - targets:
+          - pve1.sikademo.com:9090
+          - pve2.sikademo.com:9090
+          - pve3.sikademo.com:9090
