@@ -70,6 +70,18 @@ In other words, containers are virtualization at operating-system-level whereas 
 
 [source](https://www.skysilk.com/blog/2019/lxc-vs-kvm/)
 
+### Proxmox & Terraform
+
+#### What is Terraform
+
+Terraform is infrastructure as code provider. You can define your infrastructure in HCL (pseudo JSON) and apply it. Terraform makes your desired state (described in file) to actual. More about Terraform on my website <https://ondrej-sika.cz/terraform> (CS only yet).
+
+#### Proxmox Provider
+
+Threre is not official provider yet :'(
+
+- [Telmate/terraform-provider-proxmox](https://github.com/Telmate/terraform-provider-proxmox)
+
 
 ## Demo Proxmox
 
