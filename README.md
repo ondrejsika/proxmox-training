@@ -160,6 +160,18 @@ Got to __Datacenter__ -> __Storage__ and add NFS.
 
 Now, you can store CD Images, Disk Images & Backups on NFC.
 
+#### Copy Local ISO Image to NFS storage
+
+```
+cp /var/lib/vz/template/iso/<iso_image> /mnt/pve/<storage_name>/template/iso/
+```
+
+Example
+
+```
+cp /var/lib/vz/template/iso/debian-10.2.0-amd64-netinst.iso /mnt/pve/nfs/template/iso/
+```
+
 ### ZFS
 
 Why Proxmox with ZFS:
