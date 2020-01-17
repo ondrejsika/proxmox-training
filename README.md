@@ -298,6 +298,15 @@ Example
 qmrestore 100 /mnt/pve/nfs/dump/vzdump-qemu-100-2019_11_29-06_29_48.vma
 ```
 
+### Migrate VM
+
+Requirements:
+
+- Ditributed (eg.: CEPH) storage or __not__ replicated VM image - migration of replicated VMs is described below
+
+![](images/migrate.png)
+
+
 ### Replication
 
 Requirements:
