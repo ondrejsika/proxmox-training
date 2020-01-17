@@ -402,6 +402,27 @@ Go to __Create CT__
 ![](images/container-new.png)
 
 
+## Permissions
+
+Go to __Datacenter__ -> __Permissions__
+
+You can add permissions to other users,groups on VMs, Containers, Storage.
+
+### Resource Pools
+
+You can use resource pools to assign permissons (user, grout) to some resources.
+
+### Workflow
+
+- Create group
+- Create pool
+- Configure pool permissions
+- Create users in Proxmox
+- Create users in Linux (adduser)
+- Add users to groups
+- Create resource in pool / Add resource to pool
+
+
 ## Thank you! & Questions?
 
 That's it. Do you have any questions? __Let's go for a beer!__
