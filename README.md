@@ -21,6 +21,12 @@ If you found bug, create issue or pull request.
 
 Also feel free to propose improvements by creating issues.
 
+## Live Chat
+
+For sharing links & "secrets".
+
+<https://tlk.io/sika-proxmox>
+
 
 ## Course
 
