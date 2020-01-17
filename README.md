@@ -264,6 +264,7 @@ Why Proxmox with Ceph:
 
 #### Resources
 
+- Ceph Intro & Architectural Overview (video) - <https://www.youtube.com/watch?v=7I9uxoEhUdY>
 - Proxmox VE Ceph Benchmark 2018/02 - <https://www.proxmox.com/en/downloads/item/proxmox-ve-ceph-benchmark>
 
 
@@ -492,3 +493,4 @@ Wanna to go for a beer or do some work together? Just [book me](book-me.sika.io)
 - ZFS on Linux (Proxmox Wiki) - <https://pve.proxmox.com/wiki/ZFS_on_Linux>
 - Snapshots, Clones & Replication in ZFS on Linux - <https://www.howtoforge.com/tutorial/how-to-use-snapshots-clones-and-replication-in-zfs-on-linux/>
 - Proxmox VE Ceph Benchmark 2018/02 - <https://www.proxmox.com/en/downloads/item/proxmox-ve-ceph-benchmark>
+- Ceph Intro & Architectural Overview (video) - <https://www.youtube.com/watch?v=7I9uxoEhUdY>
