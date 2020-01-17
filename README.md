@@ -335,6 +335,28 @@ Go to __Datacenter__ -> __Backups__
 
 ![](images/scheduled-backups-new.png)
 
+## LXC Containers
+
+### Download Templates
+
+At first, you have to download container template.
+
+Go to Storeage which supports Container Templates, for example local or NFS.
+
+![](images/container-template-new-select.png)
+
+![](images/container-template-new-download.png)
+
+![](images/container-template-list.png)
+
+
+### Create Container
+
+Go to __Create CT__
+
+![](images/container-new.png)
+
+
 ## Thank you! & Questions?
 
 That's it. Do you have any questions? __Let's go for a beer!__
