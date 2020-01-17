@@ -336,18 +336,16 @@ Resources:
 
 ![](images/replication.png)
 
-### Migrate VM between replicated nodes
+### Migrate VM Between Replicated Nodes
 
 ```
 mv /etc/pve/nodes/<node>/qemu-server/<vm_id>.conf /etc/pve/nodes/<new node>/qemu-server/<vm_id>.conf
-qm start 100
 ```
 
 Example
 
 ```
-mv /etc/pve/nodes/node1/qemu-server/102.conf /etc/pve/nodes/node2/qemu-server/102.conf
-qm start 102
+mv /etc/pve/nodes/pve1/qemu-server/102.conf /etc/pve/nodes/pve2/qemu-server/102.conf
 ```
 
 ## Scheduled Backups
