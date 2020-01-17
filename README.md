@@ -168,7 +168,7 @@ You need Proxmox Cluster for:
 
 ### Directory
 
-Path on node's filesystem
+Path on node's filesystem. You can store anything. You have to use __qcow2 images__ for VM images.
 
 ### NFS
 
@@ -195,6 +195,8 @@ cp /var/lib/vz/template/iso/debian-10.2.0-amd64-netinst.iso /mnt/pve/nfs/templat
 ```
 
 ### ZFS
+
+Supports only VM & Container images (storage), no ISO and backups. You have to use __raw images__ on ZFS.
 
 Why Proxmox with ZFS:
 
