@@ -62,6 +62,15 @@ For sharing links & "secrets".
 - HA, Multi Master
 - Many storage plugins (NFS, CIFS, GlusterFS), built-in CEPH
 
+### KVM vs LXC
+
+LXC stands for Linux Containers and KVM is an acronym for Kernel-Based Virtual Machine. The main difference here is that virtual machines require their own kernel instance to run while containers share the same kernel. However, each container still acts as its own separate environment with their own respective file systems.
+
+In other words, containers are virtualization at operating-system-level whereas VMs are virtualization at the hardware level.
+
+[source](https://www.skysilk.com/blog/2019/lxc-vs-kvm/)
+
+
 ## Demo Proxmox
 
 - GUI:
@@ -443,6 +452,7 @@ Wanna to go for a beer or do some work together? Just [book me](book-me.sika.io)
 
 ## Resources
 
+- Proxmox KVM - <https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines>
 - Proxmox Command Line Tools - <https://pve.proxmox.com/wiki/Command_line_tools>
 - Backup & Restore - <https://pve.proxmox.com/wiki/Backup_and_Restore>
 - Cloud Init - <https://pve.proxmox.com/wiki/Cloud-Init_Support>
