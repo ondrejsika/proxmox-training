@@ -17,9 +17,9 @@ Git, Gitlab, Gitlab CI, Docker, Kubernetes, Terraform, Prometheus, ELK / EFK
 
 Feel free to star this repository or fork it.
 
-If you found bug, create issue or pull request.
+If you find a bug, create an issue or pull request.
 
-Also feel free to propose improvements by creating issues.
+Also, feel free to propose improvements by creating issues.
 
 ## Live Chat
 
@@ -60,14 +60,14 @@ For sharing links & "secrets".
 
 - KVM & LXC Virtualization
 - Web Interface, API, CLI & Terraform Support
-- HA, Multi Master
+- HA, Multi-Master
 - Many storage plugins (NFS, CIFS, GlusterFS), built-in CEPH
 
 ### KVM vs LXC
 
-LXC stands for Linux Containers and KVM is an acronym for Kernel-Based Virtual Machine. The main difference here is that virtual machines require their own kernel instance to run while containers share the same kernel. However, each container still acts as its own separate environment with their own respective file systems.
+LXC stands for Linux Containers and KVM is an acronym for Kernel-Based Virtual Machine. The main difference here is that virtual machines require their kernel instance to run while containers share the same kernel. However, each container still acts as its separate environment with their respective file systems.
 
-In other words, containers are virtualization at operating-system-level whereas VMs are virtualization at the hardware level.
+In other words, containers are virtualization at operating-system-level whereas VMs is virtualization at the hardware level.
 
 [source](https://www.skysilk.com/blog/2019/lxc-vs-kvm/)
 
@@ -75,11 +75,11 @@ In other words, containers are virtualization at operating-system-level whereas 
 
 #### What is Terraform
 
-Terraform is infrastructure as code provider. You can define your infrastructure in HCL (pseudo JSON) and apply it. Terraform makes your desired state (described in file) to actual. More about Terraform on my website <https://ondrej-sika.cz/terraform> (CS only yet).
+Terraform is infrastructure as a code provider. You can define your infrastructure in HCL (pseudo JSON) and apply it. Terraform makes your desired state (described in the file) to actual. More about Terraform on my website <https://ondrej-sika.cz/terraform> (CS only yet).
 
 #### Proxmox Provider
 
-Threre is not official provider yet :'(
+There is not official provider yet :'(
 
 - [Telmate/terraform-provider-proxmox](https://github.com/Telmate/terraform-provider-proxmox)
 
@@ -109,17 +109,17 @@ Threre is not official provider yet :'(
 
 ### SSL
 
-You have to setup Let's encrypt certificates on GUI proxy on port 8006
+You have to set up Let's Encrypt certificates on GUI proxy on port 8006
 
 Go to __Node (demo)__ -> __System__ -> __Certificates__, setup domains & LE account and generate certificates.
 
 ### Network
 
-You have to create network for you VMs.
+You have to create the network for your VMs.
 
 Go to __Node (demo)__ -> __System__ -> __Network__
 
-Ensure static IP on default bridge (vmbr0) and bridged ports to active network device (enp1s0).
+Ensure static IP on default bridge (vmbr0) and bridged ports to an active network device (enp1s0).
 
 ![](images/vmbr0.png)
 
@@ -133,9 +133,11 @@ ip a
 ip route | grep default
 ```
 
-Create new bridge for VMs network.
+Create a new bridge for VMs network.
 
 ![](images/vmbr1.png)
+
+Install the `ifup
 
 ### NAT
 
@@ -150,7 +152,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 ### Port Forward
 
-You can setup SSH port forward into VMs
+You can setup the SSH port forward into VMs
 
 ```
 iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9900 -j DNAT --to 192.168.0.100:22
@@ -206,7 +208,7 @@ You need Proxmox Cluster for:
 
 ### Directory
 
-Path on node's filesystem. You can store anything. You have to use __qcow2 images__ for VM images.
+A path on node's filesystem. You can store anything. You have to use __qcow2 images__ for VM images.
 
 ### NFS
 
@@ -238,7 +240,7 @@ Supports only VM & Container images (storage), no ISO and backups. You have to u
 
 Why Proxmox with ZFS:
 
-- Replication between nodes (partional updates by zfs send)
+- Replication between nodes (partial updates by `zfs send`)
 - Easy Migration between nodes
 
 ZFS Features:
@@ -257,11 +259,11 @@ ZFS Resources:
 Why Proxmox with Ceph:
 
 - HA VMs
-- Build in Ceph Custer (easy setup)
+- Build-in Ceph Custer (easy setup)
 
 #### What is Ceph
 
-> Ceph is a open source storage platform, implements object storage on a single distributed computer cluster, and provides interfaces for object-, block- and file-level storage. Ceph aims primarily for completely distributed operation without a single point of failure, and scalable to the exabyte level. -- [wikipedia](https://en.wikipedia.org/wiki/Ceph_(software))
+> Ceph is a open-source storage platform, implements object storage on a single distributed computer cluster, and provides interfaces for object-, block- and file-level storage. Ceph aims primarily for completely distributed operation without a single point of failure, and scalable to the exabyte level. -- [wikipedia](https://en.wikipedia.org/wiki/Ceph_(software))
 
 #### Resources
 
@@ -381,7 +383,7 @@ qmrestore 100 /mnt/pve/nfs/dump/vzdump-qemu-100-2019_11_29-06_29_48.vma
 
 Requirements:
 
-- Ditributed (eg.: CEPH) storage or __not__ replicated VM image - migration of replicated VMs is described below
+- Distributed (eg.: CEPH) storage or __not__ replicated VM image - migration of replicated VMs is described below
 
 ![](images/migrate.png)
 
@@ -425,9 +427,9 @@ Go to __Datacenter__ -> __Backups__
 
 ### Download Templates
 
-At first, you have to download container template.
+At first, you have to download the container template.
 
-Go to Storeage which supports Container Templates, for example local or NFS.
+Go to Storage which supports Container Templates, for the example local or NFS.
 
 ![](images/container-template-new-select.png)
 
@@ -447,21 +449,21 @@ Go to __Create CT__
 
 Go to __Datacenter__ -> __Permissions__
 
-You can add permissions to other users,groups on VMs, Containers, Storage.
+You can add permissions to other users, groups on VMs, Containers, Storage.
 
 ### Resource Pools
 
-You can use resource pools to assign permissons (user, grout) to some resources.
+You can use resource pools to assign permissions (user, grout) to some resources.
 
 ### Workflow
 
-- Create group
-- Create pool
+- Create a group
+- Create a pool
 - Configure pool permissions
 - Create users in Proxmox
 - Create users in Linux (adduser)
 - Add users to groups
-- Create resource in pool / Add resource to pool
+- Create a resource in pool / Add resource to pool
 
 ### Prometheus Monitoring
 
@@ -476,13 +478,13 @@ Install
 wget -O /usr/local/bin/pve_exporter https://github.com/wakeful/pve_exporter/releases/download/0.1.6/pve_exporter-linux-amd64 && chmod +x /usr/local/bin/pve_exporter
 ```
 
-Run on node
+Run on the node
 
 ```
 pve_exporter -password <password>
 ```
 
-Run on other machine
+Run on the other machine
 
 ```
 pve_exporter -pve-url <pve_url> -password <password>
@@ -519,9 +521,9 @@ That's it. Do you have any questions? __Let's go for a beer!__
 - linkedin:	[/in/ondrejsika/](https://linkedin.com/in/ondrejsika/)
 - Newsletter, Slack, Facebook & Linkedin Groups: <https://join.sika.io>
 
-_Do you like the course? Write me recommendation on Twitter (with handle `@ondrejsika`) and LinkedIn (add me [/in/ondrejsika](https://www.linkedin.com/in/ondrejsika/) and I'll send you request for recommendation). __Thanks__._
+_Do you like the course? Write me a recommendation on Twitter (with handle `@ondrejsika`) and LinkedIn (add me [/in/ondrejsika](https://www.linkedin.com/in/ondrejsika/) and I'll send you Request for the recommendation). __Thanks__._
 
-Wanna to go for a beer or do some work together? Just [book me](https://book-me.sika.io) :)
+Wanna go for a beer or do some work together? Just [book me](https://book-me.sika.io) :)
 
 
 ## Resources
