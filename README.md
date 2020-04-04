@@ -93,6 +93,13 @@ There is not official provider yet :'(
 - Username: `root`
 - Password: __you get a password at the course__
 
+After setup, we will have GUIs with valid HTTPS (behind Cloudflare):
+
+  - https://pve1-pve.sikademo.com
+  - https://pve2-pve.sikademo.com
+  - https://pve3-pve.sikademo.com
+
+
 ## Terminology
 
 - PVE - Proxmox Virtual Environment
