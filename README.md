@@ -87,18 +87,12 @@ There is not official provider yet :'(
 ## Demo Proxmox
 
 - GUI:
-  - https://pve1.sikademo.com:8006
-  - https://pve2.sikademo.com:8006
-  - https://pve3.sikademo.com:8006
+  - https://pve0node0.sikademo.com:8006
+  - https://pve0node1.sikademo.com:8006
+  - https://pve0node2.sikademo.com:8006
+
 - Username: `root`
 - Password: __you get a password at the course__
-
-After setup, we will have GUIs with valid HTTPS (behind Cloudflare):
-
-  - https://pve1-pve.sikademo.com
-  - https://pve2-pve.sikademo.com
-  - https://pve3-pve.sikademo.com
-
 
 ## Terminology
 
@@ -417,7 +411,7 @@ mv /etc/pve/nodes/<node>/qemu-server/<vm_id>.conf /etc/pve/nodes/<new node>/qemu
 Example
 
 ```
-mv /etc/pve/nodes/pve1/qemu-server/102.conf /etc/pve/nodes/pve2/qemu-server/102.conf
+mv /etc/pve/nodes/pve0node0/qemu-server/102.conf /etc/pve/nodes/pve0node1/qemu-server/102.conf
 ```
 
 ## Scheduled Backups
