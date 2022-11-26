@@ -211,6 +211,19 @@ You need Proxmox Cluster for:
 
 A path on node's filesystem. You can store anything. You have to use __qcow2 images__ for VM images.
 
+### Download Debian ISO
+
+- https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
+- https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso
+
+```
+cd /var/lib/vz/template/iso/
+```
+
+```
+wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso
+```
+
 ### NFS
 
 Run NFS server, for example `nfs.sikademo.com` ([Terraform Manifest](https://github.com/ondrejsika/terraform-demo-nfs))
@@ -232,7 +245,7 @@ cp /var/lib/vz/template/iso/<iso_image> /mnt/pve/<storage_name>/template/iso/
 Example
 
 ```
-cp /var/lib/vz/template/iso/debian-10.2.0-amd64-netinst.iso /mnt/pve/nfs/template/iso/
+cp /var/lib/vz/template/iso/debian-11.5.0-amd64-netinst.iso /mnt/pve/nfs/template/iso/
 ```
 
 ### ZFS
