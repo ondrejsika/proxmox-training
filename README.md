@@ -224,6 +224,10 @@ cd /var/lib/vz/template/iso/
 wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso
 ```
 
+```
+mv debian-11.5.0-amd64-netinst.iso debian.iso
+```
+
 ### NFS
 
 Run NFS server, for example `nfs.sikademo.com` ([Terraform Manifest](https://github.com/ondrejsika/terraform-demo-nfs))
@@ -300,7 +304,7 @@ qm create <vmid> [ARGS]
 Example
 
 ```
-qm create 104 --cdrom local:iso/debian-10.2.0-amd64-netinst.iso --name demo --net0 virtio,bridge=vmbr0 --virtio0 local:10,format=qcow2 --bootdisk virtio0 --ostype l26 --memory 1024 --onboot no --sockets 1
+qm create 104 --cdrom local:iso/debian.iso --name demo --net0 virtio,bridge=vmbr0 --virtio0 local:10,format=qcow2 --bootdisk virtio0 --ostype l26 --memory 1024 --onboot no --sockets 1
 ```
 
 [more](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines#_managing_virtual_machines_with_tt_span_class_monospaced_qm_span_tt)
