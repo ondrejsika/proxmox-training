@@ -138,8 +138,6 @@ Create a new bridge for VMs network.
 
 ![](images/vmbr1.png)
 
-Install the `ifup
-
 ### NAT
 
 If you have only one public IP address you have to set up NAT.
