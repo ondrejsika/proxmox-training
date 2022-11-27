@@ -207,9 +207,9 @@ You need Proxmox Cluster for:
 
 ## Storage
 
-### Directory
+### Local
 
-A path on node's filesystem. You can store anything. You have to use __qcow2 images__ for VM images.
+Just a local directory on node's filesystem. You can store anything. You have to use __qcow2 images__ for VM images.
 
 ### Download Debian ISO
 
