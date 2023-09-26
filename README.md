@@ -214,18 +214,18 @@ Just a local directory on node's filesystem. You can store anything. You have to
 ### Download Debian ISO
 
 - https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
-- https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso
+- https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso
 
 ```
 cd /var/lib/vz/template/iso/
 ```
 
 ```
-wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso
+wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso
 ```
 
 ```
-mv debian-11.5.0-amd64-netinst.iso debian.iso
+mv debian-12.1.0-amd64-netinst.iso debian.iso
 ```
 
 ### NFS
