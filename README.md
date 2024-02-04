@@ -483,6 +483,12 @@ You can use resource pools to assign permissions (user, grout) to some resources
 - Add users to groups
 - Create a resource in pool / Add resource to pool
 
+## SSO
+
+## SSO using Keycloak
+
+![keycloak-sso](images/keycloak-sso.png)
+
 ### Prometheus Monitoring
 
 - [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (19 stars on Github)
