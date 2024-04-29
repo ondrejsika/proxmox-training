@@ -1,4 +1,30 @@
-.vscode
+# Mac
 .DS_Store
 
-prometheus/data/**
+# Editor
+.vscode
+.idea
+
+# Generic
+*.log
+*.backup
+*.local.sh
+*.local.yml
+*.local.yaml
+*.local.json
+*.local.txt
+
+# Terraform
+.terraform
+*.tfstate
+.terraform.tfstate.lock.info
+*.tfvars
+!*.EXAMPLE.tfvars
+override.tf
+
+# Infracost
+.infracost
+.infracost-reports
+
+# Project
+/prometheus/data
