@@ -250,7 +250,7 @@ cp /var/lib/vz/template/iso/<iso_image> /mnt/pve/<storage_name>/template/iso/
 Example
 
 ```
-cp /var/lib/vz/template/iso/debian-11.5.0-amd64-netinst.iso /mnt/pve/nfs/template/iso/
+cp /var/lib/vz/template/iso/debian.iso /mnt/pve/nfs/template/iso/
 ```
 
 ### ZFS
