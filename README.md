@@ -148,7 +148,7 @@ If you have only one public IP address you have to set up NAT.
 Create IP Tables rule on your node
 
 ```
-iptables -t nat -A POSTROUTING -s '10.10.1.0/24' -o eth0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s '10.10.1.0/24' -o vmbr0 -j MASQUERADE
 echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
 
@@ -157,33 +157,33 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 You can setup the SSH port forward into VMs
 
 ```
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9900 -j DNAT --to 10.10.1.100:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9901 -j DNAT --to 10.10.1.101:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9902 -j DNAT --to 10.10.1.102:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9903 -j DNAT --to 10.10.1.103:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9904 -j DNAT --to 10.10.1.104:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9905 -j DNAT --to 10.10.1.105:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9906 -j DNAT --to 10.10.1.106:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9907 -j DNAT --to 10.10.1.107:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9908 -j DNAT --to 10.10.1.108:22
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 9909 -j DNAT --to 10.10.1.109:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9900 -j DNAT --to 10.10.1.100:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9901 -j DNAT --to 10.10.1.101:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9902 -j DNAT --to 10.10.1.102:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9903 -j DNAT --to 10.10.1.103:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9904 -j DNAT --to 10.10.1.104:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9905 -j DNAT --to 10.10.1.105:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9906 -j DNAT --to 10.10.1.106:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9907 -j DNAT --to 10.10.1.107:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9908 -j DNAT --to 10.10.1.108:22
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9909 -j DNAT --to 10.10.1.109:22
 ```
 
 And Other ports, for example:
 
 ```
 # HTTP & HTTPS to proxy VM (101)
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80  -j DNAT --to 10.10.1.101:80
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j DNAT --to 10.10.1.101:443
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 80  -j DNAT --to 10.10.1.101:80
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 443 -j DNAT --to 10.10.1.101:443
 
 # mail ports to mail VM (102)
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 25  -j DNAT --to 10.10.1.102:25
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 110 -j DNAT --to 10.10.1.102:110
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 143 -j DNAT --to 10.10.1.102:143
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 465 -j DNAT --to 10.10.1.102:465
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 587 -j DNAT --to 10.10.1.102:587
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 993 -j DNAT --to 10.10.1.102:993
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 995 -j DNAT --to 10.10.1.102:995
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 25  -j DNAT --to 10.10.1.102:25
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 110 -j DNAT --to 10.10.1.102:110
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 143 -j DNAT --to 10.10.1.102:143
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 465 -j DNAT --to 10.10.1.102:465
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 587 -j DNAT --to 10.10.1.102:587
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 993 -j DNAT --to 10.10.1.102:993
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 995 -j DNAT --to 10.10.1.102:995
 ```
 
 ## Cluster
