@@ -186,6 +186,16 @@ iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 993 -j DNAT --to 10.255.0.
 iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 995 -j DNAT --to 10.255.0.102:995
 ```
 
+### Persistent IP Tables Rules
+
+```
+apt-get install iptables-persistent
+```
+
+```
+netfilter-persistent save
+```
+
 ## Cluster
 
 You need Proxmox Cluster for:
