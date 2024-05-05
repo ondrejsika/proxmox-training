@@ -1,0 +1,35 @@
+meta:
+  schema_version: 3
+hosts:
+  all:
+    - ssh_target: root@pve99node0.sikademo.com
+      vars:
+        config_file: node0wg0.conf
+    - ssh_target: root@pve99node1.sikademo.com
+      vars:
+        config_file: node1wg0.conf
+    - ssh_target: root@pve99node2.sikademo.com
+      vars:
+        config_file: node2wg0.conf
+plays:
+  - name: Install WireGuard
+    hosts: [all]
+    tags: [install]
+    tasks:
+      - name: Install WireGuard
+        command:
+          cmd: apt install -y wireguard
+  - name: Apply WireGuard configuration
+    hosts: [all]
+    tags: [apply]
+    tasks:
+      - name: Copy WireGuard configuration
+        cp:
+          local_src: '{{.Vars.config_file}}'
+          remote_dst: /etc/wireguard/wg0.conf
+      - name: Enable WireGuard
+        command:
+          cmd: systemctl enable wg-quick@wg0
+      - name: Restart WireGuard
+        command:
+          cmd: systemctl start wg-quick@wg0
