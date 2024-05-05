@@ -1,0 +1,4 @@
+default:
+  user: root@pam
+  password: asdfasdf2020
+  verify_ssl: false
