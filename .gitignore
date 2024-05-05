@@ -25,6 +25,3 @@ override.tf
 # Infracost
 .infracost
 .infracost-reports
-
-# Project
-/prometheus/data
