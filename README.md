@@ -123,6 +123,8 @@ You have to create the network for your VMs.
 
 Go to __Node (demo)__ -> __System__ -> __Network__
 
+![](images/network_before.png)
+
 Ensure static IP on default bridge (vmbr0) and bridged ports to an active network device (enp1s0).
 
 ![](images/vmbr0.png)
@@ -140,6 +142,10 @@ ip route | grep default
 Create a new bridge for VMs network.
 
 ![](images/vmbr1.png)
+
+Network Configuration shpuld look like this:
+
+![](images/network_after.png)
 
 ### NAT
 
