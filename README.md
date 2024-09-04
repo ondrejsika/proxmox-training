@@ -551,6 +551,9 @@ prometheus
 
 Go to <http://127.0.0.1:9090/graph>
 
+## Grafana Dashboard for Proxmox
+
+- https://grafana.com/grafana/dashboards/10347-proxmox-via-prometheus/
 
 ## Thank you! & Questions?
 
