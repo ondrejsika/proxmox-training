@@ -247,7 +247,9 @@ mv debian-12.7.0-amd64-netinst.iso debian.iso
 
 ### NFS
 
-Run NFS server, for example `nfs.sikademo.com` ([Terraform Manifest](https://github.com/ondrejsika/terraform-demo-nfs))
+We have NFS server running on `pve-nfs-shared.sikademo.com`.
+
+You can run your NFS server, for example from ([Terraform Manifest](https://github.com/ondrejsika/terraform-demo-nfs))
 
 #### Add NFS storage to storage configuration
 
