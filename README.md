@@ -247,7 +247,7 @@ mv debian-12.7.0-amd64-netinst.iso debian.iso
 
 ### NFS
 
-We have NFS server running on `pve-nfs-shared.sikademo.com`.
+We have NFS server running on `nfs.sikademo.com`.
 
 You can run your NFS server, for example from ([Terraform Manifest](https://github.com/ondrejsika/terraform-demo-nfs))
 
