@@ -522,6 +522,17 @@ You can use resource pools to assign permissions (user, grout) to some resources
 
 ## SSO using Keycloak
 
+Client
+
+- Issuer: `https://sso.sikalabs.com/realms/training`
+- Client ID: `example_client_id`
+- Client Secret: `example_client_secret`
+
+User
+
+- Username: `example_username`
+- Password: `example_password`
+
 ![keycloak-sso](images/keycloak-sso.png)
 
 ### Prometheus Monitoring
