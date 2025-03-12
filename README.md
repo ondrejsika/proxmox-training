@@ -706,3 +706,11 @@ Wanna go for a beer or do some work together? Just [book me](https://book-me.sik
 - Snapshots, Clones & Replication in ZFS on Linux - <https://www.howtoforge.com/tutorial/how-to-use-snapshots-clones-and-replication-in-zfs-on-linux/>
 - Proxmox VE Ceph Benchmark 2018/02 - <https://www.proxmox.com/en/downloads/item/proxmox-ve-ceph-benchmark>
 - Ceph Intro & Architectural Overview (video) - <https://www.youtube.com/watch?v=7I9uxoEhUdY>
+
+## Debug
+
+#### Connect to Proxmox UI using port forwarding and jump host
+
+```
+ssh -L 8006:localhost:8006 -J root@pve0node3.sikademo.com root@10.250.99.2
+```
