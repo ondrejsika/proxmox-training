@@ -536,6 +536,8 @@ User
 
 ![keycloak-sso](images/keycloak-sso.png)
 
+![keycloak-login](images/keycloak_login.png)
+
 ### Prometheus Monitoring
 
 - [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (19 stars on Github)
