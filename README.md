@@ -631,6 +631,26 @@ pve_exporter -pve-url <pve_url> -password <password>
 
 Listen on port 9090
 
+#### Ceph Monitoring
+
+Enable Prometheus metrics
+
+```
+ceph mgr module enable prometheus
+```
+
+The metrics are available on port 9283 on managers
+
+```
+curl http://10.250.0.2:9283/metrics
+```
+
+you can setup port forwarding to be able to scrape metrics from your Prometheus server
+
+```
+iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 9283 -j DNAT --to-destination 10.250.0.2:9283
+iptables -t nat -A POSTROUTING -d 10.250.0.2 -p tcp --dport 9283 -j MASQUERADE
+```
 
 #### Run Demo Prometheus
 
@@ -650,6 +670,10 @@ Go to <http://127.0.0.1:9090/graph>
 ## Grafana Dashboard for Proxmox
 
 - https://grafana.com/grafana/dashboards/10347-proxmox-via-prometheus/ or use `10347`
+
+## Ceph Dashboards for Grafana
+
+https://github.com/ceph/ceph/tree/main/monitoring/ceph-mixin/dashboards_out
 
 ## Run Prometheus and Grafana
 
