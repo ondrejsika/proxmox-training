@@ -10,3 +10,7 @@ scrape_configs:
         - pve99node1.sikademo.com:9221
         - pve99node2.sikademo.com:9221
     metrics_path: /pve
+  - job_name: 'ceph'
+    static_configs:
+      - targets:
+        - pve99node0.sikademo.com:9283
