@@ -543,6 +543,38 @@ User
 - [prometheus-pve](https://github.com/znerol/prometheus-pve-exporter) (971 stars on Github, maintained)
 - [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (34 stars on Github, 6 years old last commit)
 
+#### Install prometheus-pve-exporter (Python)
+
+Install [pipx](https://pipx.pypa.io/)
+
+```
+apt-get install pipx
+```
+
+Install `prometheus-pve-exporter`
+
+```
+pipx install prometheus-pve-exporter
+```
+
+Create a config file `/etc/prometheus/pve.yml`
+
+```
+mkdir -p /etc/prometheus/
+cat <<EOF > /etc/prometheus/pve.yml
+default:
+  user: root@pam
+  password: xxx
+  verify_ssl: false
+EOF
+```
+
+Run exporter
+
+```
+/root/.local/bin/pve_exporter
+```
+
 #### Wakeful PVE Exporter (Go)
 
 Install
