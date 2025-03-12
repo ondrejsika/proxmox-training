@@ -651,6 +651,29 @@ Go to <http://127.0.0.1:9090/graph>
 
 - https://grafana.com/grafana/dashboards/10347-proxmox-via-prometheus/
 
+## Run Prometheus and Grafana
+
+```
+cd examples/monitoring
+```
+
+set `DOCKER_HOST`
+
+```
+export DOCKER_HOST=ssh://root@monitoring.sikademo.com
+```
+
+Run Prometheus & Grafana
+
+```bash
+make up
+```
+
+See:
+
+- Prometheus - <https://prometheus.monitoring.sikademo.com>
+- Grafana - <https://grafana.monitoring.sikademo.com>
+
 ## Thank you! & Questions?
 
 That's it. Do you have any questions? __Let's go for a beer!__
