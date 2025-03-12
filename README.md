@@ -538,6 +538,28 @@ User
 
 ![keycloak-login](images/keycloak_login.png)
 
+## Notifications
+
+### Setup Maildev
+
+```
+cd examples/maildev
+```
+
+set `DOCKER_HOST`
+
+```
+export DOCKER_HOST=ssh://root@proxmox-maildev.sikademo.com
+```
+
+Run Prometheus & Grafana
+
+```bash
+make up
+```
+
+See: https://proxmox-maildev.sikademo.com
+
 ### Prometheus Monitoring
 
 - [prometheus-pve](https://github.com/znerol/prometheus-pve-exporter) (971 stars on Github, maintained)
