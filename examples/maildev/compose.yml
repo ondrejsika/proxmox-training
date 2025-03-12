@@ -1,0 +1,23 @@
+services:
+  maildev:
+    image: maildev/maildev
+    ports:
+      - 1080:1080
+      - 1025:1025
+  caddy:
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM caddy
+        RUN cat <<EOF > /etc/caddy/Caddyfile
+        ${DOMAIN:-proxmox-maildev.sikademo.com} {
+          reverse_proxy maildev:1080
+        }
+        EOF
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - caddy-data:/data
+volumes:
+  caddy-data:
