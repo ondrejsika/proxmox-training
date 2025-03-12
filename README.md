@@ -575,6 +575,40 @@ Run exporter
 /root/.local/bin/pve_exporter
 ```
 
+Or create systemd service
+
+```
+cat <<EOF > /etc/systemd/system/prometheus-pve-exporter.service
+[Unit]
+Description=prometheus-pve-exporter
+ConditionPathExists=/
+After=network.target
+
+[Service]
+Type=simple
+
+ExecStart=/root/.local/bin/pve_exporter
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+Start service
+
+```
+systemctl enable prometheus-pve-exporter
+systemctl start prometheus-pve-exporter
+```
+
+or
+
+```
+systemctl enable prometheus-pve-exporter --now
+```
+
 #### Wakeful PVE Exporter (Go)
 
 Install
