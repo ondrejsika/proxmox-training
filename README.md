@@ -543,7 +543,7 @@ User
 - [prometheus-pve](https://github.com/znerol/prometheus-pve-exporter) (971 stars on Github, maintained)
 - [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (34 stars on Github, 6 years old last commit)
 
-#### Wakeful PVE Exporter
+#### Wakeful PVE Exporter (Go)
 
 Install
 
