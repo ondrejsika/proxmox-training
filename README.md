@@ -524,6 +524,7 @@ You can use resource pools to assign permissions (user, grout) to some resources
 
 Client
 
+- Realm (Proxmox): `SikaLabs_SSO`
 - Issuer: `https://sso.sikalabs.com/realms/training`
 - Client ID: `example_client_id`
 - Client Secret: `example_client_secret`
