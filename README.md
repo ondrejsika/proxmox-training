@@ -164,6 +164,16 @@ echo "net.ipv4.ip_forward=1" | tee /etc/sysctl.d/99-ipforward.conf
 sysctl --system
 ```
 
+Make IP tables rule persistent
+
+```
+apt-get install iptables-persistent
+```
+
+```
+iptables-save > /etc/iptables/rules.v4
+```
+
 ### Port Forward
 
 You can setup the SSH port forward into VMs
