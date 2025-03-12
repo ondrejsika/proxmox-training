@@ -155,7 +155,13 @@ Create IP Tables rule on your node
 
 ```
 iptables -t nat -A POSTROUTING -s '10.255.0.0/24' -o vmbr0 -j MASQUERADE
-echo 1 > /proc/sys/net/ipv4/ip_forward
+```
+
+and enable ip forwarding in sysctl
+
+```
+echo "net.ipv4.ip_forward=1" | tee /etc/sysctl.d/99-ipforward.conf
+sysctl --system
 ```
 
 ### Port Forward
