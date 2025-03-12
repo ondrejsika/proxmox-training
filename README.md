@@ -540,8 +540,8 @@ User
 
 ### Prometheus Monitoring
 
-- [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (19 stars on Github)
-- [znerol/prometheus-pve-exporter](https://github.com/znerol/prometheus-pve-exporter) (65 stars on Github)
+- [prometheus-pve](https://github.com/znerol/prometheus-pve-exporter) (971 stars on Github, maintained)
+- [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (34 stars on Github, 6 years old last commit)
 
 #### Wakeful PVE Exporter
 
