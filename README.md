@@ -560,6 +560,10 @@ make up
 
 See: https://proxmox-maildev.sikademo.com
 
+### Setup SMTP Mail Notification
+
+![smtp-notification](images/smtp_notification.png)
+
 ### Prometheus Monitoring
 
 - [prometheus-pve](https://github.com/znerol/prometheus-pve-exporter) (971 stars on Github, maintained)
