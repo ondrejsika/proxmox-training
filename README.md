@@ -218,6 +218,13 @@ apt-get install iptables-persistent
 netfilter-persistent save
 ```
 
+## Disable Enterprise Repositories
+
+```
+sudo sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/pve-enterprise.list
+sudo sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/ceph.list
+```
+
 ## Cluster
 
 You need Proxmox Cluster for:
