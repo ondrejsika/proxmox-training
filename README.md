@@ -86,6 +86,9 @@ There is not official provider yet :'(
 
 - [Telmate/terraform-provider-proxmox](https://github.com/Telmate/terraform-provider-proxmox)
 
+## Proxmox Docs
+
+<https://pve.proxmox.com/pve-docs/>
 
 ## Demo Proxmox
 
