@@ -429,6 +429,18 @@ Why Proxmox with Ceph:
 
 ![](images/vm-new.png)
 
+### NUMA
+
+NUMA stands for Non-Uniform Memory Access. It is a memory design used in multiprocessor systems, where the memory access time depends on the memory location relative to a processor. In Proxmox, you can enable NUMA for your VMs to improve performance.
+
+### When to use NUMA?
+
+- When you have a multi-socket CPU and you want to optimize memory access for your VMs.
+
+### When not to use NUMA?
+
+- When you have a single-socket CPU or a low-memory VM.
+
 #### In CLI
 
 ```
