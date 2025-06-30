@@ -422,6 +422,41 @@ Why Proxmox with Ceph:
 - Ceph Intro & Architectural Overview (video) - <https://www.youtube.com/watch?v=7I9uxoEhUdY>
 - Proxmox VE Ceph Benchmark 2018/02 - <https://www.proxmox.com/en/downloads/item/proxmox-ve-ceph-benchmark>
 
+### LVM vs ZFS vs Ceph
+
+Use LVM if
+
+- You want simple, low-overhead local storage.
+- You have external RAID or don’t need redundancy at the storage layer.
+
+Use ZFS if
+
+- You need data integrity, snapshots, or replication.
+- You’re OK with higher RAM usage.
+- Single-node or a few-node setup.
+
+Use Ceph if
+
+- You’re running a Proxmox cluster with high availability and failover needs.
+- You have multiple nodes, high-performance networking, and time to manage it.
+
+#### Performance
+
+Feature | ZFS | LVM | Ceph
+--- | --- | --- | ---
+IOPS | High with cache | High (raw), medium (thin) | Medium (depends on network)
+Throughput | High | High | Medium-High
+Latency | Low | Low | Higher (due to network overhead)
+
+#### Usecases
+
+Scenario | Recommended Storage
+--- | ---
+Small homelab or single-node server | ZFS or LVM
+Moderate production VM host with snapshot needs | ZFS
+Large Proxmox cluster with HA, live migration, and redundancy | Ceph
+High-speed local storage with minimal overhead | LVM
+
 
 ## Virtual Machines
 
