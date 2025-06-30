@@ -92,10 +92,12 @@ There is not official provider yet :'(
 
 ## Demo Proxmox
 
+Where `X` is your cluster / lab number
+
 - GUI:
-  - https://pve0node0.sikademo.com:8006
-  - https://pve0node1.sikademo.com:8006
-  - https://pve0node2.sikademo.com:8006
+  - `https://pveXnode0.sikademo.com:8006`
+  - `https://pveXnode1.sikademo.com:8006`
+  - `https://pveXnode2.sikademo.com:8006`
 
 - Username: `root`
 - Password: __you get a password at the course__
