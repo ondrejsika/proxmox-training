@@ -778,6 +778,9 @@ Wanna go for a beer or do some work together? Just [book me](https://book-me.sik
 - Snapshots, Clones & Replication in ZFS on Linux - <https://www.howtoforge.com/tutorial/how-to-use-snapshots-clones-and-replication-in-zfs-on-linux/>
 - Proxmox VE Ceph Benchmark 2018/02 - <https://www.proxmox.com/en/downloads/item/proxmox-ve-ceph-benchmark>
 - Ceph Intro & Architectural Overview (video) - <https://www.youtube.com/watch?v=7I9uxoEhUdY>
+- Simple SDN (article) - <https://www.virtualizationhowto.com/2024/03/proxmox-sdn-configuration-step-by-step/>
+- Simple SDN (video) - <https://www.youtube.com/watch?v=gYSxGCiLeto>
+- VXLAN SDN (video) - <https://www.youtube.com/watch?v=kMcr05zRVVw>
 
 ## Debug
 
