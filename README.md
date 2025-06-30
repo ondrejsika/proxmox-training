@@ -429,6 +429,16 @@ Why Proxmox with Ceph:
 
 ![](images/vm-new.png)
 
+### CPU Units vs CPU Limit vs CPU Cores
+
+CPU Units are used to prioritize CPU resources among VMs. The higher the value, the more priority the VM has over others when it comes to CPU allocation.
+
+Feature | Purpose | Behavior
+--- | --- | ---
+CPU units | Priority when CPU is busy | Relative weight in CPU time allocation
+CPU limit | Hard limit on usable CPU (% of core) | Prevents overuse; e.g., limit to 50% of one core
+CPU cores | Number of virtual CPUs exposed to VM | Affects VM performance & guest OS behavior
+
 ### NUMA
 
 NUMA stands for Non-Uniform Memory Access. It is a memory design used in multiprocessor systems, where the memory access time depends on the memory location relative to a processor. In Proxmox, you can enable NUMA for your VMs to improve performance.
