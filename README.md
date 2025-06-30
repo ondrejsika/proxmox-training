@@ -280,8 +280,8 @@ apt install libpve-network-perl
 This is required on training nodes installed on Debian, not on production ISO installation.
 
 ```
-echo "" > /etc/network/interfaces
-echo "source /etc/network/interfaces.d/*" > /etc/network/interfaces
+echo "" >> /etc/network/interfaces
+echo "source /etc/network/interfaces.d/*" >> /etc/network/interfaces
 ```
 
 ```
