@@ -488,7 +488,7 @@ NUMA stands for Non-Uniform Memory Access. It is a memory design used in multipr
 
 ![](images/vm-new.png)
 
-#### In CLI
+### Create VM using CLI
 
 ```
 qm create <vmid> [ARGS]
