@@ -271,6 +271,72 @@ You need Proxmox Cluster for:
 
 Software-defined networking (SDN) is an approach to computer networking that allows network administrators to manage network services through abstraction of lower-level functionality. SDN decouples the network control plane from the data plane, allowing for more flexible and programmable networks.
 
+### SDN Setup
+
+```
+apt install libpve-network-perl
+```
+
+This is required on training nodes installed on Debian, not on production ISO installation.
+
+```
+echo "" > /etc/network/interfaces
+echo "source /etc/network/interfaces.d/*" > /etc/network/interfaces
+```
+
+```
+apt update
+apt install dnsmasq
+# disable default instance
+systemctl disable --now dnsmasq
+```
+
+```
+apt install frr-pythontools
+systemctl enable frr.service --now
+```
+
+### Simple SDN
+
+### Create simple SDN
+
+Create a new SDN network with CIDR:
+
+```
+10.10.10.0/24
+```
+
+### VXLAN SDN
+
+### Create VXLAN SDN
+
+Create a new VXLAN SDN network with CIDR:
+
+```
+10.10.20.0/24
+```
+
+### Create Router for VXLAN SDN
+
+Enable IP Forwarding
+
+```
+echo "net.ipv4.ip_forward=1" | tee /etc/sysctl.d/99-ipforward.conf
+sysctl --system
+```
+
+Install iptables
+
+```
+apt-get install iptables iptables-persistent
+```
+
+Create NAT rule for VXLAN SDN
+
+```
+iptables -t nat -A POSTROUTING -o eth0 -s 10.10.20.0/24 -j MASQUERADE
+```
+
 ## Storage
 
 ### Local
