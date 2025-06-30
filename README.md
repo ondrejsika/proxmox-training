@@ -55,6 +55,7 @@ For sharing links & "secrets".
     - Scheduled Backups
     - HA
     - Permissions
+- SDN
 - Prometheus Monitoring
 - Beer!
 
@@ -261,6 +262,14 @@ You need Proxmox Cluster for:
 ### Join Cluster
 
 ![](images/cluster-join.png)
+
+## SDN
+
+<https://pve.proxmox.com/pve-docs/chapter-pvesdn.html#pvesdn_installation>
+
+### What is SDN?
+
+Software-defined networking (SDN) is an approach to computer networking that allows network administrators to manage network services through abstraction of lower-level functionality. SDN decouples the network control plane from the data plane, allowing for more flexible and programmable networks.
 
 ## Storage
 
