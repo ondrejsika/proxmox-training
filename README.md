@@ -462,8 +462,6 @@ High-speed local storage with minimal overhead | LVM
 
 ### Create VM
 
-![](images/vm-new.png)
-
 ### CPU Units vs CPU Limit vs CPU Cores
 
 CPU Units are used to prioritize CPU resources among VMs. The higher the value, the more priority the VM has over others when it comes to CPU allocation.
@@ -485,6 +483,10 @@ NUMA stands for Non-Uniform Memory Access. It is a memory design used in multipr
 ### When not to use NUMA?
 
 - When you have a single-socket CPU or a low-memory VM.
+
+### Create VM in GUI
+
+![](images/vm-new.png)
 
 #### In CLI
 
