@@ -303,7 +303,7 @@ systemctl enable frr.service --now
 Create a new SDN network with CIDR:
 
 ```
-10.10.10.0/24
+10.10.30.0/24
 ```
 
 ### VXLAN SDN
@@ -313,7 +313,7 @@ Create a new SDN network with CIDR:
 Create a new VXLAN SDN network with CIDR:
 
 ```
-10.10.20.0/24
+10.10.40.0/24
 ```
 
 ### Create Router for VXLAN SDN
@@ -334,7 +334,7 @@ apt-get install iptables iptables-persistent
 Create NAT rule for VXLAN SDN
 
 ```
-iptables -t nat -A POSTROUTING -o eth0 -s 10.10.20.0/24 -j MASQUERADE
+iptables -t nat -A POSTROUTING -o eth0 -s 10.10.40.0/24 -j MASQUERADE
 ```
 
 ## Storage
