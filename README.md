@@ -700,6 +700,9 @@ User
 
 ### Setup Maildev
 
+- https://github.com/maildev/maildev
+- https://maildev.github.io/maildev/
+
 ```
 cd examples/maildev
 ```
