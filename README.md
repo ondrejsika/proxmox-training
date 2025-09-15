@@ -553,6 +553,12 @@ Example
 /usr/sbin/qm snapshot 101 Snapshot_$(date +"%Y_%m_%d_%H_%M_%S")
 ```
 
+With RAM (using parameter `--vmstate`)
+
+```
+/usr/sbin/qm snapshot 101 Snapshot_$(date +"%Y_%m_%d_%H_%M_%S") --vmstate
+```
+
 For automatic (cron) snapshots, you can use <https://github.com/kvaps/pve-autosnap>
 
 ### Backup / Restore
