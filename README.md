@@ -733,7 +733,7 @@ See: https://proxmox-maildev.sikademo.com
 
 ### Prometheus Monitoring
 
-- [prometheus-pve](https://github.com/znerol/prometheus-pve-exporter) (971 stars on Github, maintained)
+- [prometheus-pve/prometheus-pve-exporter](https://github.com/prometheus-pve/prometheus-pve-exporter) (1.2k stars on Github, maintained)
 - [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (34 stars on Github, 6 years old last commit)
 
 #### Install prometheus-pve-exporter (Python)
