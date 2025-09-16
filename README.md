@@ -891,6 +891,10 @@ See:
 - Prometheus - <https://prometheus.monitoring.sikademo.com>
 - Grafana - <https://grafana.monitoring.sikademo.com>
 
+## Zabbix Monitoring
+
+https://www.zabbix.com/integrations/proxmox
+
 ## Thank you! & Questions?
 
 That's it. Do you have any questions? __Let's go for a beer!__
