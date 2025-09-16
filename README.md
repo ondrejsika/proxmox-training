@@ -931,6 +931,12 @@ Wanna go for a beer or do some work together? Just [book me](https://book-me.sik
 - Simple SDN (video) - <https://www.youtube.com/watch?v=gYSxGCiLeto>
 - VXLAN SDN (video) - <https://www.youtube.com/watch?v=kMcr05zRVVw>
 
+## Past Training Sessions
+
+### 2025-09-09 @ VITKOVICE
+
+- Terraform Example - https://github.com/sika-training-examples/2025-09-16-terraform-proxmox-example
+
 ## Debug
 
 #### Connect to Proxmox UI using port forwarding and jump host
