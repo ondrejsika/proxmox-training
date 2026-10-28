@@ -383,7 +383,7 @@ cp /var/lib/vz/template/iso/<iso_image> /mnt/pve/<storage_name>/template/iso/
 Example
 
 ```
-cp /var/lib/vz/template/iso/debian.iso /mnt/pve/nfs/template/iso/
+cp /var/lib/vz/template/iso/debian13.iso /mnt/pve/nfs/template/iso/
 ```
 
 ### ZFS
@@ -497,7 +497,7 @@ qm create <vmid> [ARGS]
 Example
 
 ```
-qm create 104 --cdrom local:iso/debian.iso --name demo --net0 virtio,bridge=vmbr0 --virtio0 local:10,format=qcow2 --bootdisk virtio0 --ostype l26 --memory 1024 --onboot no --sockets 1
+qm create 104 --cdrom local:iso/debian13.iso --name demo --net0 virtio,bridge=vmbr0 --virtio0 local:10,format=qcow2 --bootdisk virtio0 --ostype l26 --memory 1024 --onboot no --sockets 1
 ```
 
 [more](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines#_managing_virtual_machines_with_tt_span_class_monospaced_qm_span_tt)
