@@ -853,7 +853,7 @@ You need to have Prometheus installed
 git clone https://github.com/ondrejsika/proxmox-training
 cd proxmox-training
 
-cd prometheus
+cd examples/prometheus
 # run Prometheus
 prometheus
 ```
