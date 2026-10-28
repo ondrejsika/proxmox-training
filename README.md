@@ -149,7 +149,7 @@ Create a new bridge for VMs network.
 
 ![](images/vmbr1.png)
 
-Network Configuration shpuld look like this:
+Network Configuration should look like this:
 
 ![](images/network_after.png)
 
@@ -368,11 +368,11 @@ You can run your NFS server, for example from ([Terraform Manifest](https://gith
 
 #### Add NFS storage to storage configuration
 
-Got to __Datacenter__ -> __Storage__ and add NFS.
+Go to __Datacenter__ -> __Storage__ and add NFS.
 
 ![](images/add-nfs.png)
 
-Now, you can store CD Images, Disk Images & Backups on NFC.
+Now, you can store CD Images, Disk Images & Backups on NFS.
 
 #### Copy Local ISO Image to NFS storage
 
@@ -411,11 +411,11 @@ ZFS Resources:
 Why Proxmox with Ceph:
 
 - HA VMs
-- Build-in Ceph Custer (easy setup)
+- Built-in Ceph Cluster (easy setup)
 
 #### What is Ceph
 
-> Ceph is a open-source storage platform, implements object storage on a single distributed computer cluster, and provides interfaces for object-, block- and file-level storage. Ceph aims primarily for completely distributed operation without a single point of failure, and scalable to the exabyte level. -- [wikipedia](https://en.wikipedia.org/wiki/Ceph_(software))
+> Ceph is an open-source storage platform, implements object storage on a single distributed computer cluster, and provides interfaces for object-, block- and file-level storage. Ceph aims primarily for completely distributed operation without a single point of failure, and scalable to the exabyte level. -- [wikipedia](https://en.wikipedia.org/wiki/Ceph_(software))
 
 #### Resources
 
@@ -670,7 +670,7 @@ You can add permissions to other users, groups on VMs, Containers, Storage.
 
 ### Resource Pools
 
-You can use resource pools to assign permissions (user, grout) to some resources.
+You can use resource pools to assign permissions (user, group) to some resources.
 
 ### Workflow
 
@@ -719,7 +719,7 @@ set `DOCKER_HOST`
 export DOCKER_HOST=ssh://root@proxmox-maildev.sikademo.com
 ```
 
-Run Prometheus & Grafana
+Run Maildev
 
 ```bash
 make up
