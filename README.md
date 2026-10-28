@@ -733,6 +733,15 @@ See: https://proxmox-maildev.sikademo.com
 
 ### Prometheus Monitoring
 
+Proxmox can send metrics to Prometheus using the OpenTelemetry Protocol (OTLP) receiver.
+
+You can use the `prometheus_otel` example to quickly set up Prometheus with OTLP receiver.
+
+Configure in **Datacenter** -> **Metric Server**. Add a **Open Telemetry** receiver.
+
+![open_telemetry_server.png](images/open_telemetry_server.png)
+
+
 - [prometheus-pve/prometheus-pve-exporter](https://github.com/prometheus-pve/prometheus-pve-exporter) (1.2k stars on Github, maintained)
 - [wakeful/pve_exporter](https://github.com/wakeful/pve_exporter) (34 stars on Github, 6 years old last commit)
 
