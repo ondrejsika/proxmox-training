@@ -298,7 +298,7 @@ systemctl enable frr.service --now
 
 ### Simple SDN
 
-### Create simple SDN
+#### Create simple SDN
 
 Create a new SDN network with CIDR:
 
@@ -308,7 +308,7 @@ Create a new SDN network with CIDR:
 
 ### VXLAN SDN
 
-### Create VXLAN SDN
+#### Create VXLAN SDN
 
 Create a new VXLAN SDN network with CIDR:
 
@@ -316,7 +316,7 @@ Create a new VXLAN SDN network with CIDR:
 10.10.40.0/24
 ```
 
-### Create Router for VXLAN SDN
+#### Create Router for VXLAN SDN
 
 Enable IP Forwarding
 
@@ -476,11 +476,11 @@ CPU cores | Number of virtual CPUs exposed to VM | Affects VM performance & gues
 
 NUMA stands for Non-Uniform Memory Access. It is a memory design used in multiprocessor systems, where the memory access time depends on the memory location relative to a processor. In Proxmox, you can enable NUMA for your VMs to improve performance.
 
-### When to use NUMA?
+#### When to use NUMA?
 
 - When you have a multi-socket CPU and you want to optimize memory access for your VMs.
 
-### When not to use NUMA?
+#### When not to use NUMA?
 
 - When you have a single-socket CPU or a low-memory VM.
 
@@ -939,7 +939,7 @@ Wanna go for a beer or do some work together? Just [book me](https://book-me.sik
 
 ## Debug
 
-#### Connect to Proxmox UI using port forwarding and jump host
+### Connect to Proxmox UI using port forwarding and jump host
 
 ```
 ssh -L 8006:localhost:8006 -J root@pve0node3.sikademo.com root@10.250.99.2
