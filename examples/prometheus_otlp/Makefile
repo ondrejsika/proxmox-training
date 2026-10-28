@@ -1,0 +1,6 @@
+run:
+	@echo See: http://127.0.0.1:9090
+	prometheus --web.enable-otlp-receiver
+
+docker-compose-up:
+	docker-compose up -d

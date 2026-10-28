@@ -1,0 +1,10 @@
+otlp:
+  # Copy PVE resource attributes onto every series as labels
+  promote_resource_attributes:
+    - service.name
+    - proxmox.cluster
+    - proxmox.node
+
+storage:
+  tsdb:
+    out_of_order_time_window: 30m   # recommended for OTLP push
