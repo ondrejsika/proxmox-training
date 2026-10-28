@@ -593,7 +593,7 @@ qmrestore <file> <vmid>
 Example
 
 ```
-qmrestore 100 /mnt/pve/nfs/dump/vzdump-qemu-100-2019_11_29-06_29_48.vma
+qmrestore /mnt/pve/nfs/dump/vzdump-qemu-100-2019_11_29-06_29_48.vma 100
 ```
 
 ### Migrate VM
